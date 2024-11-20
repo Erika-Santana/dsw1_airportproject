@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    margin: 0; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+.container-form-login {
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.container_mensagem{
+	margin: auto; 
+    width: 400px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn.btn-primary {
+   /* Cor do texto */
+    background-color: #000000; 
+    border-color: lightblue; 
+}
+
+.container-voos {
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
