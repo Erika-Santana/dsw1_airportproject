@@ -23,7 +23,7 @@ public class LoginCommand implements Command {
 
 		String loginUsuario = request.getParameter("login");
 		String passwordUsuario = request.getParameter("senha");
-		
+		//Criação da sessão
 		HttpSession session = request.getSession();
 		
 		
@@ -32,7 +32,7 @@ public class LoginCommand implements Command {
 			session.setAttribute("sucesso", "Login realizado com sucesso!");
 			//Salvando o login do usuário na sessão
 			session.setAttribute("usuario", loginUsuario);
-			return "gerenciamento_voos.jsp";
+			return "pagina_voos.jsp";
 			
 			
 		}else {

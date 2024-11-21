@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
  <link rel="stylesheet" href="css/style.css">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<title>Gerenciamento de Voos</title>
+<title>Cadastro de Voos</title>
 </head>
 <body>
 		<jsp:include page="/includes/base.html"></jsp:include>
@@ -14,17 +14,17 @@
 	        <form method="post" action="FrontControllerServlet">
 	        <input type="hidden" name="action" value="cadastro_voos">
 	            <div class="mb-3">
-	                <label for="exampleInputEmail1" class="form-label">Numero do Voo</label>
+	                <label for="exampleInputEmail1" class="form-label">Número do Voo</label>
 	                <input type="text" class="form-control" id="numero-voo" name="numero_voo" aria-describedby="loginHelp">
 	            
 	            </div>
 	            <div class="mb-3">
 	                <label for="exampleInputPassword1" class="form-label">Companhia Aérea</label>
-	                <input type="password" class="form-control" id="companhia" name="companhia">
+	                <input type="text" class="form-control" id="companhia" name="companhia">
 	            </div>
 	              <div class="mb-3">
 	                <label for="exampleInputPassword1" class="form-label">Horário de Chegada</label>
-	                <input type="password" class="form-control" id="horario" name="horario_chegada">
+	                <input type="text" class="form-control" id="horario" name="horario_chegada">
 	            </div>
 	            <button type="submit" class="btn btn-primary color">Enviar</button>
 	        </form>

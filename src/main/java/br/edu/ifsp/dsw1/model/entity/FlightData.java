@@ -40,7 +40,7 @@ public final class FlightData {
 		return "FlightData [flightNumber=" + flightNumber + 
 				", company=" + company + 
 				", time=" + time + 
-				", state="
+				", state: "
 				+ state.getClass().getSimpleName() + "]";
 	}
 	
