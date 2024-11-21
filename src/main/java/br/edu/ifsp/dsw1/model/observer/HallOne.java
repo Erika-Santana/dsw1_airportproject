@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import br.edu.ifsp.dsw1.model.entity.FlightData;
+import br.edu.ifsp.dsw1.model.flightstates.TakingOff;
 
 public class HallOne implements FlightDataObserver{
 	
@@ -15,20 +16,20 @@ public class HallOne implements FlightDataObserver{
 		
 		voos = new LinkedList<FlightData>();
 	}
-	@Override
 	public void update(FlightData flight) {
-		if (!voos.contains(flight)) {
-			if (flight.getState().getClass().getSimpleName().equals("TakingOff")) {
-				voos.add(flight);
-			}			
-		}else {
-			if (!flight.getState().getClass().getSimpleName().equals("TakingOff")) {
-				voos.remove(flight);
-			}
-		}
-		
+	   
+	    if (!voos.contains(flight)) {
+	        if (flight.getState() instanceof TakingOff) { 
+	            voos.add(flight);
+	        }
+	    } else {
+	      
+	        if (!(flight.getState() instanceof TakingOff)) {
+	            voos.remove(flight);
+	        }
+	    }
 	}
-	
+
 
 	public List<FlightData> retornaLista(){
 		return new ArrayList<FlightData>(voos);

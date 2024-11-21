@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.edu.ifsp.dsw1.model.entity.FlightData;
+import br.edu.ifsp.dsw1.model.flightstates.Boarding;
+import br.edu.ifsp.dsw1.model.flightstates.TookOff;
 
 public class SalaDeEmbarque implements FlightDataObserver {
 	
@@ -18,16 +20,16 @@ public class SalaDeEmbarque implements FlightDataObserver {
 	}
 	@Override
 	public void update(FlightData flight) {
-
 		if (!voos.contains(flight)) {
-			if (flight.getState().getClass().getSimpleName().equals("Boarding")) {
-				voos.add(flight);
-			}			
-		}else {
-			if (!flight.getState().getClass().getSimpleName().equals("Boarding")) {
-				voos.remove(flight);
-			}
-		}
+	        if (flight.getState() instanceof Boarding) { 
+	            voos.add(flight);
+	        }
+	    } else {
+	      
+	        if (!(flight.getState() instanceof Boarding)) {
+	            voos.remove(flight);
+	        }
+	    }
 	}
 	
 

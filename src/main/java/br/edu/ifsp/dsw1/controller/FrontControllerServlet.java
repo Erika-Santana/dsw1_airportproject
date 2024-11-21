@@ -96,11 +96,11 @@ public class FrontControllerServlet extends HttpServlet {
 	        		HttpSession getSession = request.getSession(false);
 	        		if (getSession != null) {
 	        			
-	        			String login = (String)getSession.getAttribute("login");
+	        			String login = (String)getSession.getAttribute("usuario");
 		        		
 		        		if (login != null && !login.isEmpty()) {
 		        			
-		        			dispatcher = request.getRequestDispatcher("cadastro_voos.jsp");
+		        			dispatcher = request.getRequestDispatcher("pagina_voos.jsp");
 		        			
 		        		}else {
 		        			dispatcher = request.getRequestDispatcher("index.jsp");
