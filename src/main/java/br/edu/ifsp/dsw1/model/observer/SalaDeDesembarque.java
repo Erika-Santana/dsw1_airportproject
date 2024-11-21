@@ -1,5 +1,6 @@
 package br.edu.ifsp.dsw1.model.observer;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -11,7 +12,8 @@ public class SalaDeDesembarque implements FlightDataObserver{
 	
 	public SalaDeDesembarque() {
 		
-		voos = new LinkedList<>();
+		voos = new LinkedList<FlightData>();
+		
 	}
 	@Override
 	public void update(FlightData flight) {
@@ -28,6 +30,6 @@ public class SalaDeDesembarque implements FlightDataObserver{
 	}
 
 	public List<FlightData> retornaLista(){
-		return voos;
+		return new ArrayList<FlightData>(voos);
 	}
 }

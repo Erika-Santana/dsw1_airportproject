@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import br.edu.ifsp.dsw1.model.entity.FlightData;
 import br.edu.ifsp.dsw1.model.entity.FlightDataCollection;
+import br.edu.ifsp.dsw1.model.flightstates.Arriving;
 import br.edu.ifsp.dsw1.model.flightstates.Boarding;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -26,7 +27,7 @@ public class CadastroCommand implements Command {
 		String companhia = request.getParameter("companhia");
 		
 		FlightData novoRegistro = new FlightData(voo, companhia, horario);
-		Boarding status = Boarding.getIntance();
+		Arriving status = Arriving.getIntance();
 		novoRegistro.setState(status);
 		
 		instance.insertFlight(novoRegistro);

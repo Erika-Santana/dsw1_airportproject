@@ -24,18 +24,6 @@
 				
 	%>
 	
-	<script>
-		
-		var errorMessage = document.getElementById("error-message");
-
-		if (errorMessage) {
-			
-			setTimeout(function() {
-				errorMessage.style.display = "none";
-			}, 3000); 
-		}
-	</script>
-
 	
 		<jsp:include page="/includes/base.html"></jsp:include>
 		<!-- Dentro do form, eu possuo um input hidden nomeado action e de valor "login" apenas para fazer com que 
