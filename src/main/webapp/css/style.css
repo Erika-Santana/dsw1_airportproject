@@ -3,8 +3,11 @@
 body {
     margin: 0; 
     height: 100vh;
+  	min-width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column; 
+    align-items: center;
 }
 
 .container-form-login {
@@ -41,19 +44,15 @@ body {
 }
 
 .tabela_voos{
-	 margin: auto;
+	margin: auto;
 	 background-color: lightblue;
-	 align-content: center;
-	 color: #FFFFFF;
+	 align-content: center;		
+	 color: #FFFFFF;	
 	 padding: 40px;
 	 border-radius: 10px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h3{
-	text-align: center;
-
-}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -67,4 +66,37 @@ th, td {
   	padding: 20px;
     text-align: left;
      border-radius: 10px;
+}
+
+.botao_cadastro{
+	 justify-content: flex-end;
+}
+
+h3{
+	color: #FFFFFF;
+	margin: 20px;
+	text-align: center;
+
+}
+
+.mb-3{
+	margin: 20px;
+	color:#FFFFFF;
+	padding: 10px;
+
+}
+
+.navbar-nav{
+	min-width: 100%;
+	align-items: center;
+	justify-content: center; 
+            gap: 40px;
+}
+nav{
+	min-width: 100%;
+	align-items: center;
+	justify-content: center; 
+}
+.container-fluid{
+		align-items: center;
 }
