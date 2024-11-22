@@ -25,7 +25,7 @@
 		<h3 class="info_voos">Informações dos voos</h3>
 
 		<div class="botao_cadastro">
-			<a href="cadastro_voos.jsp" class="btn btn-warning">Cadastrar Voo</a>
+			<a href="FrontControllerServlet?action=cadastroPagina" class="btn btn-warning">Cadastrar Voo</a>
 
 		</div>
 

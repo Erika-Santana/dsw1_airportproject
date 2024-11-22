@@ -197,6 +197,10 @@ public class FrontControllerServlet extends HttpServlet {
 				request.setAttribute("listaHallTwo", instanciaHallTwo.retornaLista());
 				dispatcher = request.getRequestDispatcher("hall_two.jsp");
 				break;
+				
+			case "cadastroPagina":
+				dispatcher = request.getRequestDispatcher("cadastro_voos.jsp");
+				break;
 
 			default:
 				dispatcher = request.getRequestDispatcher("login.jsp");
