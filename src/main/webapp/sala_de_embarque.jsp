@@ -16,9 +16,10 @@
 <title></title>
 </head>
 <body>
+
 	<jsp:include page="/includes/base.html"></jsp:include>
 	<div class="tabela_voos">
-		<h3 class="info_voos">Informações dos voos</h3>
+		<h3 class="info_voos">Sala de Embarque</h3>
 		<table>
 			<thead>
 				<tr>
@@ -29,7 +30,12 @@
 				</tr>
 			</thead>
 			<tbody>
+			
+				<!-- Página responsável por exibir em uma tabela todos os voos que possuem o seu State como TookOff -->
+				<!-- A partir do request.getAttribute ele possui acesso a lista que tinha sido salva no Servlet e assim sendo guardada (Cast) para ser manipulada e dessa forma
+				exibir as informações para o usuário em uma tabela. !-->
 				<%
+				
 				List<FlightData> flights = (ArrayList<FlightData>) request.getAttribute("listaEmbarcando");
 
 				if (flights != null && !flights.isEmpty()) {

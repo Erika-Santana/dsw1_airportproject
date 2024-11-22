@@ -11,18 +11,20 @@
 	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 	crossorigin="anonymous">
 <title>Cadastro de Voos</title>
+
 </head>
 <body>
+	<!-- Página responsável por solicitar as informações do novo voo a ser cadastrado após a requisição do ADM  -->
+
 	<jsp:include page="/includes/base.html"></jsp:include>
 	<div class="container-voos">
 		<form method="post" action="FrontControllerServlet">
 			<input type="hidden" name="action" value="cadastro_voos">
 			<div class="mb-3">
-			<h3 class="info_voos">Informações dos voos</h3>
+			<h3>Informações dos voos</h3>
 				<label for="exampleInputEmail1" class="form-label">Número do
 					Voo</label> <input type="text" class="form-control" id="numero-voo"
 					name="numero_voo" aria-describedby="loginHelp">
-
 			</div>
 			<div class="mb-3">
 				<label for="exampleInputPassword1" class="form-label">Companhia
