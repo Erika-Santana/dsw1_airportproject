@@ -42,6 +42,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.greetings{
+	 margin: auto;
+	 padding: 40px;
+	 background-color: lightblue;
+	 align-content: center;		
+	 color: #FFFFFF;	
+	 border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .tabela_voos{
 	margin: auto;

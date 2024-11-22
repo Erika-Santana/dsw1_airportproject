@@ -158,7 +158,7 @@ public class FrontControllerServlet extends HttpServlet {
 						dispatcher = request.getRequestDispatcher("pagina_voos.jsp");
 
 					} else {
-						dispatcher = request.getRequestDispatcher("index.jsp");
+						dispatcher = request.getRequestDispatcher("login.jsp");
 					}
 				}
 
@@ -199,7 +199,7 @@ public class FrontControllerServlet extends HttpServlet {
 				break;
 
 			default:
-				dispatcher = request.getRequestDispatcher("index.jsp");
+				dispatcher = request.getRequestDispatcher("login.jsp");
 				break;
 			}
 			

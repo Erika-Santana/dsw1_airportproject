@@ -37,7 +37,7 @@ public class LoginCommand implements Command {
 
 		} else {
 			session.setAttribute("error", "Usuário ou senha inseridos incorretos.");
-			return "index.jsp";
+			return "login.jsp";
 		}
 
 	}
