@@ -14,18 +14,22 @@ Página que o Administrador realiza o seu login.
 
 ### Administração
 Página que apenas o ADM possui autorização de entrar e realizar alterações.
-![ADM](imagens/PagVoospng)
+![ADM](imagens/PagVoos.png)
 
 ### Desembarque 
-Página que mostra os voos com o status de Desembarque
+Página que mostra os voos com o status de Desembarque.
 ![Desembarque](imagens/Desembarque.png)
 
+### Embarque 
+Página que mostra os voos com o status de Embarque.
+![Desembarque](imagens/Embarque.png)
+
 ### Decolando 
-Página que mostra os voos com o status de Decolando
+Página que mostra os voos com o status de Decolando.
 ![Decolando](imagens/Decolando.png)
 
 ### Decolados 
-Página que mostra os voos com o status de Decolados
+Página que mostra os voos com o status de Decolados.
 ![Decolados](imagens/Decolados.png)
 
 ## Desenvolvedora
